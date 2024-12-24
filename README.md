@@ -1,12 +1,14 @@
 # FASTAPI-ONION
 
 # ディレクトリ構成
-├── src
-│   ├── domain         # ドメイン層
-│   ├── usecase        # ユースケース層
-│   ├── presentation   # プレゼンテーション層
-│   ├── infrastructure # インフラストラクチャ層
-│   └── main.py        # エントリーポイント
+```
+├── src  
+│   ├── domain         # ドメイン層  
+│   ├── usecase        # ユースケース層  
+│   ├── presentation   # プレゼンテーション層  
+│   ├── infrastructure # インフラストラクチャ層  
+│   └── main.py        # エントリーポイント  
+```
 
 # Run server
 docker compose up -d
