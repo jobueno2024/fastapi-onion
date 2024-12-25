@@ -3,7 +3,7 @@ from typing import Optional
 
 
 class TaskSchema(BaseModel):
-    id: Optional[int]
+    id: Optional[int] = None
     title: str
     description: Optional[str] = None
 
