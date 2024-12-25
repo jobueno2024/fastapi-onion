@@ -1,14 +1,14 @@
 from fastapi import FastAPI, Depends
 from domain.task import Task, TaskRepository
 from usecase.task_usecase import TaskUseCase
-from infrastructure.task_repository_impl import TaskRepositoryImpl
+from infrastructure.sqlite_task_repository import SqliteTaskRepository
 from presentation.schemas import TaskSchema
 
 app = FastAPI()
 
 
 def task_usecase_factory():
-    task_repository: TaskRepository = TaskRepositoryImpl()
+    task_repository: TaskRepository = SqliteTaskRepository()
     return TaskUseCase(task_repository)
 
 
