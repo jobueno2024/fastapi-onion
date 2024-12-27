@@ -18,13 +18,11 @@ docker compose up -d
 ## POST
 curl -X POST -H "Content-Type: application/json" -d '{"title": "My Task", "description": "Task details"}' http://localhost:8000/tasks
 
-curl -X POST -H "Content-Type: application/json" -d '{"id": 1, "title": "My Task", "description": "Task details"}' http://localhost:8000/tasks
-
 ## GET
 curl http://localhost:8000/tasks/1
 
 ## Database
-SQLite ?
+SQLite
 
 # Shutdown server
 docker compose down
